@@ -1,0 +1,1128 @@
+{
+	"camera" : 
+	{
+		"center" : "0.00000 0.00000 -1.00000",
+		"eye" : "0.00000 0.00000 0.00000",
+		"up" : "0.00000 1.00000 0.00000"
+	},
+	"general" : 
+	{
+		"ambientcolor" : "0.30000 0.30000 0.30000",
+		"bloom" : false,
+		"bloomhdrfeather" : 0.1,
+		"bloomhdriterations" : 8,
+		"bloomhdrscatter" : 1.619,
+		"bloomhdrstrength" : 2.0,
+		"bloomhdrthreshold" : 1.0,
+		"bloomstrength" : 10.0,
+		"bloomthreshold" : 0.64999998,
+		"bloomtint" : "1.00000 1.00000 1.00000",
+		"camerafade" : true,
+		"cameraparallax" : false,
+		"cameraparallaxamount" : 0.5,
+		"cameraparallaxdelay" : 0.1,
+		"cameraparallaxmouseinfluence" : 0.5,
+		"camerapreview" : true,
+		"camerashake" : false,
+		"camerashakeamplitude" : 0.5,
+		"camerashakeroughness" : 1.0,
+		"camerashakespeed" : 3.0,
+		"clearcolor" : "0.70000 0.70000 0.70000",
+		"clearenabled" : true,
+		"farz" : 10000.0,
+		"fov" : 50.0,
+		"gravitydirection" : "0.00000 -1.00000 0.00000",
+		"gravitystrength" : 1.0,
+		"hdr" : false,
+		"nearz" : 0.0099999998,
+		"orthogonalprojection" : 
+		{
+			"height" : 2160,
+			"width" : 3840
+		},
+		"perspectiveoverridefov" : 90.0,
+		"skylightcolor" : "0.30000 0.30000 0.30000",
+		"winddirection" : "-0.98024 0.19784 0.00000",
+		"windenabled" : false,
+		"windstrength" : 1000.0,
+		"zoom" : 1.0
+	},
+	"objects" : 
+	[
+		{
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
+			"id" : 17,
+			"image" : "models/WIP3.json",
+			"locktransforms" : true,
+			"name" : "WIP3",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"size" : "3840.00000 2160.00000"
+		},
+		{
+			"alignment" : "bottom",
+			"alpha" : 
+			{
+				"animation" : 
+				{
+					"c0" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 0,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 1,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0.5
+						}
+					],
+					"options" : 
+					{
+						"fps" : 60,
+						"length" : 60,
+						"mode" : "single",
+						"startpaused" : true,
+						"wraploop" : null
+					}
+				},
+				"script" : "/*\n*  Transformierend: Media Area, Skalierung\n*/\n'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\n\t//if new thumbnail has been received play animation\n\tif (thisLayer.visible == true) {\n\t\tthisLayer.alpha = 0;\n\t\tthisObject.getAnimation().play();\n\t}\n\telse {\n\t\treturn\n\t}\n}\n",
+				"value" : 0.5
+			},
+			"angles" : "0.00000 -0.00000 0.00000",
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
+			"id" : 30,
+			"image" : "models/workshop/3187908708/Media Area.json",
+			"name" : "Media Area",
+			"origin" : "500.16452 5.19311 0.00000",
+			"scale" : 
+			{
+				"animation" : 
+				{
+					"c0" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : -0.85714287,
+								"y" : -0.0
+							},
+							"frame" : 0,
+							"front" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : -1,
+								"y" : -0.0
+							},
+							"frame" : 25,
+							"front" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : 0.85714287,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						}
+					],
+					"c1" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : -0.66666669,
+								"y" : -0.0
+							},
+							"frame" : 0,
+							"front" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : -0.51678997
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : -0.83333331,
+								"y" : -0.051679
+							},
+							"frame" : 15,
+							"front" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : 1,
+								"y" : 0.034452666
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0.04321
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : -1,
+								"y" : -0.0
+							},
+							"frame" : 25,
+							"front" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : 0.60000002,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						}
+					],
+					"c2" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : -0.85714287,
+								"y" : -0.0
+							},
+							"frame" : 0,
+							"front" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : -1,
+								"y" : -0.0
+							},
+							"frame" : 25,
+							"front" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : 0.85714287,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						}
+					],
+					"options" : 
+					{
+						"fps" : 60,
+						"length" : 60,
+						"mode" : "single",
+						"name" : "Init Media Area",
+						"startpaused" : true,
+						"wraploop" : null
+					},
+					"relative" : true
+				},
+				"script" : "/*\n*  Transformierend: Media Area, Skalierung !!!\n*/\n'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\t\n\t//if new thumbnail has been received play animation\n\tif (thisLayer.visible == true) {\n\t\tthisLayer.alpha = 0;\n\t\tthisObject.getAnimation().play();\n\t}\n\telse {\n\t\treturn\n\t}\n}\n",
+				"value" : "0.51679 0.51679 0.51679"
+			},
+			"size" : "1920.00000 845.00000",
+			"visible" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n\n/**\n * @param {Boolean} value - for property 'visible'\n * @return {Boolean} - update current property value\n */\nexport function init(value) {\n\t\n\tif (thisLayer.visible == true) {\n\t\tthisLayer.alpha = 1;\n\t}\n\n}\n\n\n/**\n * @param {MediaPlaybackEvent} event\n */\nexport function mediaPlaybackChanged(event) {\n\tthisLayer.visible = event.state !== MediaPlaybackEvent.PLAYBACK_STOPPED;\n}\n",
+				"user" : "enablemediaintegration",
+				"value" : true
+			}
+		},
+		{
+			"alpha" : 
+			{
+				"animation" : 
+				{
+					"c0" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 5,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 35,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 1
+						}
+					],
+					"options" : 
+					{
+						"fps" : 60,
+						"length" : 60,
+						"mode" : "single",
+						"parent" : 
+						{
+							"key" : "origin"
+						},
+						"wraploop" : null
+					}
+				},
+				"script" : "/*\n*  Song Title, Deckkraft\n*/\n'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n// Please note: Do not remove this line or asset references may break.\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaPropertiesChanged(event) {\n\n\t//if new thumbnail has been received play animation\n\tif (thisLayer.visible == true) {\n\t\tthisLayer.alpha = 0;\n\t\tthisObject.getAnimation().play();\n\t}\n\telse {\n\t\treturn\n\t}\n}\n",
+				"value" : 1.0
+			},
+			"anchor" : "none",
+			"angles" : "0.00000 -0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"depthtest" : "enabled",
+			"disablepropagation" : false,
+			"font" : "fonts/Monofur-PK7og.ttf",
+			"horizontalalign" : "left",
+			"id" : 33,
+			"limitrows" : true,
+			"limituseellipsis" : false,
+			"limitwidth" : true,
+			"maxrows" : 2,
+			"maxwidth" : 471.0,
+			"name" : "Song Title",
+			"opaquebackground" : false,
+			"origin" : 
+			{
+				"animation" : 
+				{
+					"c0" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 5,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0.00030000001
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 35,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						}
+					],
+					"c1" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 5,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 28.875731
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 35,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						}
+					],
+					"c2" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 5,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 35,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						}
+					],
+					"options" : 
+					{
+						"children" : 
+						[
+							{
+								"key" : "alpha"
+							}
+						],
+						"fps" : 60,
+						"length" : 60,
+						"mode" : "single",
+						"name" : "Title",
+						"wraploop" : null
+					},
+					"relative" : true
+				},
+				"script" : "/*\n*  Song Title, Ursprung\n*/\n'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n// Please note: Do not remove this line or asset references may break.\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaPropertiesChanged(event) {\n\n\t//if new thumbnail has been received play animation\n\tif (thisLayer.visible == true) {\n\t\tthisLayer.alpha = 0;\n\t\tthisObject.getAnimation().play();\n\t}\n\telse {\n\t\treturn\n\t}\n}\n",
+				"value" : "-137.09760 619.67834 0.00000"
+			},
+			"padding" : 32,
+			"parent" : 30,
+			"pointsize" : 20.0,
+			"scale" : "2.24557 2.23990 2.24557",
+			"size" : "410.00000 84.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n// Please note: Do not remove this line or asset references may break.\n\nvar mediaData = \"\";\n\n/**\n * @param {String} value - for property 'text'\n * @return {String} - update current property value\n */\nexport function update(value) {\n\treturn mediaData;\n}\n\n/**\n * @param {MediaPropertiesEvent} event\n */\nexport function mediaPropertiesChanged(event) {\n\tmediaData = event.title;\n}\n",
+				"value" : "Song Titel"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n\n/**\n * @param {MediaPlaybackEvent} event\n */\nexport function mediaPlaybackChanged(event) {\n\tthisLayer.visible = event.state !== MediaPlaybackEvent.PLAYBACK_STOPPED;\n}\n",
+				"user" : "songtitle",
+				"value" : true
+			}
+		},
+		{
+			"alpha" : 
+			{
+				"animation" : 
+				{
+					"c0" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 5,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 35,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 1
+						}
+					],
+					"options" : 
+					{
+						"fps" : 60,
+						"length" : 60,
+						"mode" : "single",
+						"parent" : 
+						{
+							"key" : "origin"
+						},
+						"wraploop" : null
+					}
+				},
+				"script" : "/*\n*  Artist, Alpha\n*/\n'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n// Please note: Do not remove this line or asset references may break.\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaPropertiesChanged(event) {\n\n\t//if new thumbnail has been received play animation\n\tif (thisLayer.visible == true) {\n\t\tthisLayer.alpha = 0;\n\t\tthisObject.getAnimation().play();\n\t}\n\telse {\n\t\treturn\n\t}\n}\n",
+				"value" : 1.0
+			},
+			"anchor" : "none",
+			"angles" : "0.00000 -0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"depthtest" : "enabled",
+			"disablepropagation" : false,
+			"font" : "fonts/Monofur-PK7og.ttf",
+			"horizontalalign" : "left",
+			"id" : 34,
+			"limitrows" : true,
+			"limituseellipsis" : false,
+			"limitwidth" : true,
+			"maxrows" : 1,
+			"maxwidth" : 416.28625,
+			"name" : "Artist",
+			"opaquebackground" : false,
+			"origin" : 
+			{
+				"animation" : 
+				{
+					"c0" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 5,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : -0.00031
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 35,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						}
+					],
+					"c1" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 5,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : -43.466499
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 35,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						}
+					],
+					"c2" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 5,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 35,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						}
+					],
+					"options" : 
+					{
+						"children" : 
+						[
+							{
+								"key" : "alpha"
+							}
+						],
+						"fps" : 60,
+						"length" : 60,
+						"mode" : "single",
+						"name" : "Artist",
+						"wraploop" : null
+					},
+					"relative" : true
+				},
+				"script" : "/*\n*  Artist Origin\n*/\n'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n// Please note: Do not remove this line or asset references may break.\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaPropertiesChanged(event) {\n\n\t//if new thumbnail has been received play animation\n\tif (thisLayer.visible == true) {\n\t\tthisLayer.alpha = 0;\n\t\tthisObject.getAnimation().play();\n\t}\n\telse {\n\t\treturn\n\t}\n}\n",
+				"value" : "-137.09760 261.29395 0.00000"
+			},
+			"padding" : 32,
+			"parent" : 30,
+			"pointsize" : 14.0,
+			"scale" : "2.24557 2.23990 2.24557",
+			"size" : "174.00000 58.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n// Please note: Do not remove this line or asset references may break.\n\nvar mediaData = \"\";\n\n/**\n * @param {String} value - for property 'text'\n * @return {String} - update current property value\n */\nexport function update(value) {\n\treturn mediaData;\n}\n\n/**\n * @param {MediaPropertiesEvent} event\n */\nexport function mediaPropertiesChanged(event) {\n\tmediaData = event.artist;\n}\n",
+				"value" : "Artist"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n\n/**\n * @param {MediaPlaybackEvent} event\n */\nexport function mediaPlaybackChanged(event) {\n\tthisLayer.visible = event.state !== MediaPlaybackEvent.PLAYBACK_STOPPED;\n}\n",
+				"user" : "albumtitle1",
+				"value" : true
+			}
+		},
+		{
+			"alpha" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n\nexport var scriptProperties = createScriptProperties()\n\t.addSlider({ //Values for this property might need to be changed according to the effect that is beeing tied to this script.\n\t\tname: 'minValue',\n\t\tlabel: 'Min value',\n\t\tvalue: 0,\n\t\tmin: 0,\n\t\tmax: 2,\n\t\tinteger: false\n\t})\n\t.addSlider({ //Values for this property might need to be changed according to the effect that is beeing tied to this script.\n\t\tname: 'maxValue',\n\t\tlabel: 'Max value',\n\t\tvalue: 1,\n\t\tmin: 0,\n\t\tmax: 2,\n\t\tinteger: false\n\t})\n\t.addCheckbox({ //This enables the variable strenght of the effect based on the strenght of the beat.\n\t\tname: 'adaptiveValue',\n\t\tlabel: 'Adaptive max value',\n\t\tvalue: false\n\t})\n\t.addSlider({ //This is the speed at which the effect is activated during the beat.\n\t\tname: 'beatSpeed',\n\t\tlabel: 'Activation speed',\n\t\tvalue: 0.9,\n\t\tmin: 0.001,\n\t\tmax: 0.999,\n\t\tinteger: false\n\t})\n\t.addSlider({ //This is the speed at which the effect is deactivated after the beat.\n\t\tname: 'endBeatSpeed',\n\t\tlabel: 'Deactivation speed',\n\t\tvalue: 0.1,\n\t\tmin: 0.001,\n\t\tmax: 0.999,\n\t\tinteger: false\n\t})\n\t.addSlider({ //This set the difference needed in audio level between the current frame and the previous one to be recognised as a beat.\n\t//The higher the number the grater the difference.\n\t\tname: 'sensivity',\n\t\tlabel: 'Minimum difference (beat VS no beat)',\n\t\tvalue: 0.05,\n\t\tmin: 0,\n\t\tmax: 1,\n\t\tinteger: false\n\t})\n\t.addSlider({ //This set the tollerance in audio level between the current frame and the average of all the remembered beats to be recognised as a beat.\n\t//The higher the number the lower the tollerance.\n\t\tname: 'tollerance',\n\t\tlabel: 'Difference tollerance (inverted)',\n\t\tvalue: 0.8,\n\t\tmin: 0,\n\t\tmax: 1,\n\t\tinteger: false\n\t})\n\t.addSlider({ //This set the audio level lower limit, below this there's no search for beats.\n\t\tname: 'lowerLimit',\n\t\tlabel: 'Lower audio level threshold',\n\t\tvalue: 0.3,\n\t\tmin: 0,\n\t\tmax: 2,\n\t\tinteger: false\n\t})\n\t.addSlider({ //This set the tollerance in audio level between the current frame and the average of all the remembered beats to be recognised as a beat.\n\t//The higher the number the lower the tollerance.\n\t\tname: 'tollerance1',\n\t\tlabel: 'Audio level tollerance (inverted)',\n\t\tvalue: 0.5,\n\t\tmin: 0,\n\t\tmax: 1,\n\t\tinteger: false\n\t})\n\t.addText({ //This set the number of beats to remember and be used as models for the next beat.\n\t//to many and the algorithm won't respond to a sudden change in music, to little and there'll be a lot of inaccurate detections.\n\t\tname: 'nBeats',\n\t\tlabel: 'Beats to remember',\n\t\tvalue: '15'\n\t})\n\t.finish();\n\t\n/**\n * Lower this setting only in case of serious perfomance issues. This set the accuracy at which beats are detected. Must be 16, 32 or 64 per channel.\n */\nconst frequencyResolution = 64; //can be modified for customization\n\n/**\n * The time (in milliseconds) that must pass without any beat to start lowering expected values of the next beat.\n */\nconst timePop = 200; //can be modified for customization\n\n/**\n * The amount of time (in milliseconds) when beats won't be registered after a beat.\n */\nconst offBeatTimer = 0; //can be modified for customization\n\n/**\n * The amount of seconds of non-beat sounds that'll be remembered.\n */\nconst nonBeatSound = 5; //can be modified for customization\n\n/**\n * Sets the priority lower frequencies have over higher ones. 1 same priority, 0 treble are not considered.\n */\nconst bassOverTreble = 0.7; //can be modified for customization\n\n/**\n * This creates a permanent link to the audio response data.\n */\nlet audioBuffer = engine.registerAudioBuffers(frequencyResolution);\n\n/**\n * The audio level of the current frame, divided by frequency bands.\n */\nvar audioDelta = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];\n\n/**\n * The audio level of the previous frame, divided by frequency bands.\n */\nvar oldDelta = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];\n\n/**\n * This is to know if a beat is currently appening.\n */\nvar beatOn = false;\n\n/**\n * The list of audio levels of beats remembered, divided by frequency bands.\n * @type {Array<number[]>}\n */\nvar beatsHistory = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []];\n\n/**\n * The list of audio level differences between beats remembered and their previous frame, divided by frequency bands.\n * @type {Array<number[]>}\n */\nvar diffHistory = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []];\n\n/**\n * The list of avarage values between audio level and difference, divided by frequency bands.\n * @type {Array<number[]>}\n */\nvar average = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []];\n\n/**\n * The history of non-beat Audio levels divided by frequency bands.\n * @type {Array<number[]>}\n */\nvar noBeatAudioLevel = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []];\n\n/**\n * The average difference between beat and non-beat audio levels, divided by frequency bands.\n * @type {Array<number[]>}\n */\nvar beatNoBeatDiffHistory = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []];\n\n/**\n * The average audio level value between the remembered beats, divided by frequency bands.\n */\nvar beatsAverage = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];\n\n/**\n * The average difference between audio levels of remembered beats and the frames before them, divided by frequency bands.\n */\nvar diffAverage = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];\n\n/**\n * Indicate how far the beat animation needs to go based on audio level.\n */\nvar modifier = 1;\n\n/**\n * The time, in milliseconds, when the last beat happened.\n */\nvar lastBeat = 0;\n\n/**\n * The frame rate at which the wallpaper is currently running. It'll be calculated automatically.\n */\nvar fps = 60;\n\n/**\n * The time in milliseconds when the current frame is happening.\n */\nvar currentFrame = 0;\n\n/**\n * The time in milliseconds when the previous frame as happened.\n */\nvar oldFrame = 0;\n\n//Temporary variables.\nvar n = 1;\n\n/**\n * Determine whether there's a beat happening or not and manage the beat animation.\n * @param {number} value (the current value of the property)\n * @return {number} the updated value of the property\n */\nexport function update(value) {\n\tlet time = new Date();\n\tlet differences = [];\n\tlet maxAudioDelta = 0;\n\tlet maxDifference = 0;\n\tlet maxAudioDeltaIndex = 0;\n\tcurrentFrame = time.getTime();\n\tfps = 1000 / (currentFrame - oldFrame); //This detects the current frame rate.\n\toldFrame = currentFrame;\n\n\tfor (var i = 0; i < 16; ++i)\n\t\tif (i > 0 && i < 4){ //This decides which frequency bands are to be analyzed. From 0(bass) to 15(treble). Can be modified for customization.\n\t\t\tif (i <= 8) audioDelta[i] = audioBuffer.average[i];\n\t\t\telse audioDelta[i] = audioBuffer.average[i] * bassOverTreble;\n\t\t\tdifferences[i] = audioDelta[i] - oldDelta[i];\n\t\t\taverage[i] = (audioDelta[i] + differences[i] * 1.5) / 2;\n\t\t}\n\n\tfor (var i = 0; i < audioDelta.length; ++i)\n\t\tif (average[i] >= arrayMax(average, i)){\n\t\t\tmaxAudioDelta = audioDelta[i];\n\t\t\tmaxDifference = differences[i];\n\t\t\tmaxAudioDeltaIndex = i;\n\t\t}\n\n\tlet noBeatAudioAvg = arrayAverage(noBeatAudioLevel[maxAudioDeltaIndex]);\n\tlet beatNoBeatDiff = maxAudioDelta - noBeatAudioAvg;\n\t\n\tif (!beatOn){\n\t\tif (maxDifference > Math.max(diffAverage[maxAudioDeltaIndex] * scriptProperties.tollerance, scriptProperties.sensivity, beatNoBeatDiff * 0.5)){\n\t\t\tif (maxAudioDelta > Math.max(beatsAverage[maxAudioDeltaIndex] * scriptProperties.tollerance1, scriptProperties.lowerLimit, noBeatAudioAvg)){\n\t\t\t\tif (scriptProperties.adaptiveValue) modifier = Math.min(Math.max(maxDifference * 2 * (diffAverage[maxAudioDeltaIndex] / maxDifference), 0.2), 1);\n\t\t\t\tvalue = onBeat(value);\n\t\t\t\tupdateBeatsHistory(maxAudioDeltaIndex, time.getTime() - lastBeat);\n\t\t\t\tlastBeat = time.getTime();\n\t\t\t\tupdateNoBeatHistory(maxAudioDeltaIndex);\n\t\t\t} else {\n\t\t\t\tvalue = returnFromBeat(value);\n\t\t\t\tupdateNoBeatHistory();\n\t\t\t}\n\t\t} else {\n\t\t\tvalue = returnFromBeat(value);\n\t\t\tupdateNoBeatHistory();\n\t\t}\n\t} else {\n\t\tvalue = onBeat(value);\n\t\tupdateNoBeatHistory(maxAudioDeltaIndex);\n\t}\n\n\tfor (var i = 0; i < audioDelta.length; ++i) oldDelta[i] = audioDelta[i];\n\treturn value;\n}\n\n/**\n * Returns the maximum value in the provided array. The second parameter is in case you want to know if a certain value is the highest, provide it and the function will exclude it from the search.\n * @param {Array<number>} array\n * @param {number=} index\n * @return {number} the maximum value\n */\nfunction arrayMax(array, index) {\n\tlet value = 0;\n\tfor (var i = 0; i < array.length; ++i){\n\t\tif (value < array[i] && i != index) value = array[i];\n\t}\n\treturn value;\n}\n\n/**\n * Returns the average value in the provided array.\n * @param {Array<number>} array\n * @return {number} the average value\n */\nfunction arrayAverage(array) {\n\tlet value = 0;\n\tlet n = 0;\n\tfor (var i = 0; i < array.length; ++i){\n\t\tif (array[i] != 0){\n\t\t\tvalue += array[i];\n\t\t\tn++;\n\t\t}\n\t}\n\tvalue /= n;\n\treturn value;\n}\n\n/**\n * Returns true if the given amount of time from the last beat is passed, otherwise it returns false.\n * @param {number} ms (the number of milliseconds that needs to pass from the last beat)\n * @return {boolean}\n */\nfunction beatTimer(ms) {\n\tlet time = new Date();\n\tif (time.getTime() - lastBeat > ms) return true;\n\telse return false;\n}\n\n/**\n * Returns the value for the activation of the beat animation.\n * @param {number} value (the current value of the property)\n * @return {number} the updated value of the property\n */\nfunction onBeat(value) {\n\tif (value < ((scriptProperties.maxValue - scriptProperties.minValue) * modifier) * 0.99 + scriptProperties.minValue && beatTimer(offBeatTimer)){\n\t\tvalue += ((scriptProperties.maxValue - value) * modifier) * (scriptProperties.beatSpeed / (fps / 60)) * Math.max(modifier, 0.7)/* * Math.pow((scriptProperties.maxValue - value), 0.1)*/; //Uncomment to add accelleration to the animation. The speed is automatically adjusted to the framerate.\n\t\tvalue = Math.min(value, scriptProperties.maxValue);\n\t\tbeatOn = true;\n\t\treturn value;\n\t}\n\tvalue = returnFromBeat(value);\n\treturn value;\n}\n\n/**\n * Returns the value for the deactivation of the beat animation.\n * @param {number} value (the current value of the property)\n * @return {number} the updated value of the property\n */\nfunction returnFromBeat(value) {\n\tvalue -= (value - scriptProperties.minValue) * (scriptProperties.endBeatSpeed / (fps / 60))/* * Math.pow((value - scriptProperties.minValue), 0.3)*/; //Uncomment to add accelleration to the animation. The speed is automatically adjusted to the framerate.\n\tvalue = Math.max(value, scriptProperties.minValue);\n\tbeatOn = false;\n\treturn value;\n}\n\n/**\n * Updates the list of beats remembered by adding the newest and deleting the oldest.\n * @param {number} maxDelta (the number of the frequency band that needs to be updated)\n * @param {number} lastBeat (the time, in milliseconds, that passed from the last beat)\n */\nfunction updateBeatsHistory(maxDelta, lastBeat) {\n\tbeatsHistory[maxDelta].unshift(audioDelta[maxDelta]);\n\tdiffHistory[maxDelta].unshift(audioDelta[maxDelta] - oldDelta[maxDelta]);\n\tbeatNoBeatDiffHistory[maxDelta].unshift(beatsAverage[maxDelta] - arrayAverage(noBeatAudioLevel[maxDelta]));\n\tif (n > parseInt(scriptProperties.nBeats)) popHistory(maxDelta);\n\telse n++;\n\tbeatsAverage[maxDelta] = Math.min(analiseHistory(beatsHistory[maxDelta], lastBeat), arrayAverage(noBeatAudioLevel[maxDelta]) * 1.8);\n\tdiffAverage[maxDelta] = Math.min(analiseHistory(diffHistory[maxDelta], lastBeat), 0.7);\n}\n\n/**\n * Updates the history of non-beat audio levels. Provide the frequency band to exclude it from the update.\n * @param {number=} maxDelta (the number of the frequency band that can't be updated because a beat is happening)\n */\nfunction updateNoBeatHistory(maxDelta) {\n\tfor (var i = 0; i < 16; ++i){\n\t\tif (i != maxDelta){\n\t\t\tnoBeatAudioLevel[i].unshift(audioDelta[i]);\n\t\t\tif (noBeatAudioLevel[i].length > nonBeatSound * fps) noBeatAudioLevel[i].pop();\n\t\t}\n\t}\n}\n\n/**\n * Deletes the oldest remembered beat.\n * @param {number} maxDelta (the number of the frequency band that needs to be reduced)\n */\nfunction popHistory(maxDelta) {\n\tbeatsHistory[maxDelta].pop();\n\tdiffHistory[maxDelta].pop();\n\tbeatNoBeatDiffHistory[maxDelta].pop();\n}\n\n/**\n * Analyze the list of remembered beats to decides which are the best conditions for the next beat.\n * @param {Array<number>} history (the array to be analised)\n * @param {number} lastBeat (the time, in milliseconds, that passed from the last beat)\n * @return {number} the estimated minimum value of the next beat\n */\nfunction analiseHistory(history, lastBeat) {\n\tlet tempMax = 0;\n\tlet tempMin = 100;\n\tfor (var i = 0; i < history.length; ++i){\n\t\tif (history[i] > tempMax) tempMax = history[i];\n\t\telse if (history[i] < tempMin) tempMin = history[i];\n\t}\n\ttempMin += (tempMax - tempMin) / 3;\n\tlet tempAverage = (tempMax + tempMin) / 2;\n\tlet n = 0;\n\tlet average = 0;\n\tfor (var i = 0; i < history.length; ++i){\n\t\tif (history[i] > tempAverage) n++;\n\t\taverage += history[i];\n\t}\n\tlet full, m = 0, t = 0, s = 0, modifier1;\n\tif (currentFrame - lastBeat > timePop && m == 0) m = currentFrame;\n\telse m = 0;\n\tif (m != 0) Math.min(t = m / timePop, scriptProperties.nBeats / 5);\n\telse t = 0;\n\tif (m == 0 && t != 0 && s == 0) s = currentFrame;\n\telse s = 0;\n\tif (s != 0) modifier1 = (t - (currentFrame - s)) / timePop;\n\telse modifier1 = lastBeat / timePop;\n\tlet timePassed = Math.min(modifier1, scriptProperties.nBeats / 5);\n\tif (history.length > scriptProperties.nBeats / 5){\n\t\taverage /= history.length + timePassed;\n\t\tfull = true;\n\t} else {\n\t\taverage /= scriptProperties.nBeats / 5;\n\t\tfull = false;\n\t}\n\tif (tempMax - tempMin > 0.2){\n\t\taverage = 0;\n\t\tif (n >= history.length * (2 / 3)){\n\t\t\tn = 0;\n\t\t\tfor (var i = 0; i < history.length; ++i){\n\t\t\t\tif (history[i] > tempAverage){\n\t\t\t\t\taverage += history[i];\n\t\t\t\t\tn++;\n\t\t\t\t}\n\t\t\t}\n\t\t} else if (n <= history.length / 3){\n\t\t\tn = 0;\n\t\t\tfor (var i = 0; i < history.length; ++i){\n\t\t\t\tif (history[i] < tempAverage){\n\t\t\t\t\taverage += history[i];\n\t\t\t\t\tn++;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tif (full) average /= n + timePassed;\n\t\telse average /= n + timePassed / 2;\n\t}\n\treturn average;\n}\n",
+				"scriptproperties" : 
+				{
+					"adaptiveValue" : false,
+					"beatSpeed" : 0.89999998,
+					"endBeatSpeed" : 0.1,
+					"lowerLimit" : 0.30000001,
+					"maxValue" : 1,
+					"minValue" : 0.5,
+					"nBeats" : "15",
+					"sensivity" : 0.050000001,
+					"tollerance" : 0.80000001,
+					"tollerance1" : 0.5
+				},
+				"value" : 1.0
+			},
+			"angles" : "0.00000 -0.00000 0.00000",
+			"castshadow" : false,
+			"clampuvs" : true,
+			"color" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n\n// Set a default color here: \"0, 0, 0\" (RGB) means black by default\nlet color = new Vec3(0, 0, 0);\n\n/**\n * @param {Vec3} value - for property 'clearcolor'\n * @return {Vec3} - update current property value\n */\nexport function update() {\n\treturn color;\n}\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\tcolor = event.primaryColor;\n}\n",
+				"value" : "0.00000 0.00000 0.00000"
+			},
+			"colorBlendMode" : 7,
+			"disablepropagation" : false,
+			"id" : 35,
+			"image" : "models/workshop/3187908708/solid_instance_model_c0eced19.json",
+			"instance" : 
+			{
+				"combos" : 
+				{
+					"version" : 2
+				},
+				"id" : 0,
+				"textures" : [ "util/white" ]
+			},
+			"name" : "Album Cover Frame",
+			"origin" : "-534.56543 442.03650 0.00000",
+			"parent" : 30,
+			"scale" : 
+			{
+				"script" : "// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n\nexport var scriptProperties = createScriptProperties()\n\t.addSlider({\n\t\tname: 'maxScale',\n\t\tlabel: 'Max Scale',\n\t\tvalue: 1,\n\t\tmin: 0.1,\n\t\tmax: 5,\n\t\tinteger: false\n\t})\n\t.addSlider({\n\t\tname: 'minScale',\n\t\tlabel: 'Min Scale',\n\t\tvalue: 0.2,\n\t\tmin: 0.1,\n\t\tmax: 5,\n\t\tinteger: false\n\t})\n\t.addSlider({\n\t\tname: 'smoothRate',\n\t\tlabel: 'Smooth Rate',\n\t\tvalue: 70,\n\t\tmin: 0,\n\t\tmax: 100,\n\t\tinteger: true\n\t})\n\t.finish();\n\n\nconst resolution = 64 // 16,32,64\nconst audioBuffer = engine.registerAudioBuffers(resolution);\nlet smoothAudioBuffer = initialSmoothAudioBuffer(); // [0,0,0,0,..] audioAverageSmoothResult\n\nexport function update(value) {\n\tsmoothAudio()\n\treturn getAverage(smoothAudioBuffer)\n}\n\n// engine.frametime - Returns the time to update the last frame.\nfunction smoothAudio(){\n\tfor(let i=0; i < resolution; i++){\n\t\tlet volumeDifference = audioBuffer.average[i] - smoothAudioBuffer[i];\n\t\tsmoothAudioBuffer[i] += volumeDifference * getField('smoothRate') * engine.frametime\n\t\tsmoothAudioBuffer[i] = setAudioMinMax(smoothAudioBuffer[i]);\n\t}\n}\n\nfunction getField(nameField=''){\n\tif (nameField == 'smoothRate') {\n\t\treturn 15 - scriptProperties[nameField]/10\n\t}\n\treturn scriptProperties[nameField]\n}\n\nfunction setAudioMinMax(value){\n\treturn Math.max(\n\t\t\tMath.min(\n\t\t\t\tvalue, \n\t\t\t\tgetField('maxScale')),\n\t\t\tgetField('minScale'))\n}\n\nfunction initialSmoothAudioBuffer(){\n\tlet list = []\n\tfor(let i=0; i < resolution; i++){\n\t\tlist.push(0)\n\t}\n\treturn list\n}\n\nfunction getAverage(...values){\n\tif(values.length == 1){\n\t\tlet obj = values[0]\n\t\tvalues = Array.isArray(obj) ? obj : values\n\t}\n\tlet sum = values.reduce((total, value) => total + value)\n\treturn sum/values.length\n}\n\nfunction checkArrayFrequency(array=[], field) {\n\tlet sum = getAverage(array)\n\treturn sum > scriptProperties[field] ? 1 : 0;\n}\n\nfunction divArray(array=[], amountParts = 1){\n\tif(!amountParts || amountParts < 2) return array\n\tlet isOdd = (array.length % 2) != 0\n\tlet size = (array.length - (isOdd ? 1 : 0))/amountParts\n\tlet divList = []\n\n\tfor(let i = 0; i < amountParts; i++){\n\t\tif(isOdd && i == amountParts-1){\n\t\t\tdivList.push(array.slice(size*i,size*(i+1)+1))\n\t\t}else{\n\t\t\tdivList.push(array.slice(size*i,size*(i+1)))\n\t\t}\n\t}\n\treturn divList\n}\n",
+				"scriptproperties" : 
+				{
+					"maxScale" : 2.8,
+					"minScale" : 2.7,
+					"smoothRate" : 69
+				},
+				"value" : "2.70903 2.70218 2.70903"
+			},
+			"size" : "256.00000 256.00000",
+			"visible" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n\n/**\n * @param {MediaPlaybackEvent} event\n */\nexport function mediaPlaybackChanged(event) {\n\tthisLayer.visible = event.state !== MediaPlaybackEvent.PLAYBACK_STOPPED;\n}\n",
+				"value" : true
+			}
+		},
+		{
+			"alpha" : 
+			{
+				"animation" : 
+				{
+					"c0" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 0,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"x" : -1,
+								"y" : 0
+							},
+							"frame" : 1,
+							"front" : 
+							{
+								"enabled" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 1
+						}
+					],
+					"options" : 
+					{
+						"fps" : 60,
+						"length" : 60,
+						"mode" : "single",
+						"startpaused" : true,
+						"wraploop" : null
+					}
+				},
+				"script" : "/*\n*  Transformierend: Media Area, Skalierung\n*/\n'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\n\t//if new thumbnail has been received play animation\n\tif (thisLayer.visible == true) {\n\t\tthisLayer.alpha = 0;\n\t\tthisObject.getAnimation().play();\n\t}\n\telse {\n\t\treturn\n\t}\n}\n",
+				"value" : 1.0
+			},
+			"angles" : "0.00000 -0.00000 0.00000",
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
+			"id" : 40,
+			"image" : "models/workshop/3187908708/solid_instance_model_7d738a82.json",
+			"instance" : 
+			{
+				"combos" : 
+				{
+					"version" : 2
+				},
+				"id" : 41,
+				"textures" : [ "util/white" ],
+				"usertextures" : 
+				[
+					{
+						"name" : "$mediaThumbnail",
+						"type" : "system"
+					}
+				]
+			},
+			"name" : "Album Cover",
+			"origin" : "-534.17847 442.93030 0.00000",
+			"parent" : 30,
+			"scale" : "1.88432 1.87956 1.88432",
+			"size" : "350.00000 350.00000",
+			"visible" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3187908708';\n\n/**\n * @param {MediaPlaybackEvent} event\n */\nexport function mediaPlaybackChanged(event) {\n\tthisLayer.visible = event.state !== MediaPlaybackEvent.PLAYBACK_STOPPED;\n}\n",
+				"value" : true
+			}
+		},
+		{
+			"anchor" : "none",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"depthtest" : "enabled",
+			"disablepropagation" : false,
+			"font" : "fonts/Alcubierre.otf",
+			"horizontalalign" : "center",
+			"id" : 84,
+			"limitrows" : false,
+			"limituseellipsis" : false,
+			"limitwidth" : false,
+			"locktransforms" : true,
+			"maxrows" : 1,
+			"maxwidth" : 500.0,
+			"name" : "Clock",
+			"opaquebackground" : false,
+			"origin" : "1920.00000 2105.93945 0.00000",
+			"padding" : 32,
+			"parallaxDepth" : "0.00000 0.00000",
+			"pointsize" : 33.0,
+			"scale" : "0.93164 0.93164 0.93164",
+			"size" : "306.00000 161.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '2983913047';\n// Please note: Do not remove this line or asset references may break.\n\nexport var scriptProperties = createScriptProperties()\n\t.addCheckbox({\n\t\tname: 'use12hFormat',\n\t\tlabel: '使用12时',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: '定界符',\n\t\tvalue: ':'\n\t})\n\t.addCheckbox({\n\t\tname: 'showTime',\n\t\tlabel: '不显示时间',\n\t\tvalue: false\n\t})\n\t.addCheckbox({\n\t\tname: 'showCD',\n\t\tlabel: '隐藏日期时间',\n\t\tvalue: false\n\t})\n\t.finish();\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tlet time = new Date();\n\tvar hours = time.getHours();\n\tif (scriptProperties.use12hFormat) {\n\t\thours %= 12;\n\t\tif (hours == 0) {\n\t\t\thours = 12;\n\t\t}\n\t}\n\thours = (\"00\" + hours).slice(-2);\n\tlet minutes = (\"00\" + time.getMinutes()).slice(-2);\n\tvalue = hours + scriptProperties.delimiter + minutes;\n\tif (scriptProperties.showTime) {\n\t\tvalue = '\\0';\n\t}\n\tif (scriptProperties.showCD) {\n\t\tvalue = '\\0';\n\t}\n\treturn value;\n}\n",
+				"scriptproperties" : 
+				{
+					"delimiter" : ":",
+					"showCD" : false,
+					"showTime" : false,
+					"use12hFormat" : 
+					{
+						"user" : "show12h",
+						"value" : false
+					}
+				},
+				"value" : "02:36"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "enabledateandtime",
+				"value" : true
+			}
+		},
+		{
+			"anchor" : "none",
+			"angles" : "0.00000 -0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"depthtest" : "enabled",
+			"disablepropagation" : false,
+			"font" : "fonts/Alcubierre.otf",
+			"horizontalalign" : "center",
+			"id" : 87,
+			"limitrows" : false,
+			"limituseellipsis" : false,
+			"limitwidth" : false,
+			"locktransforms" : true,
+			"maxrows" : 1,
+			"maxwidth" : 500.0,
+			"name" : "Date",
+			"opaquebackground" : false,
+			"origin" : "0.00000 -83.36914 0.00000",
+			"padding" : 32,
+			"parallaxDepth" : "0.00000 0.00000",
+			"parent" : 84,
+			"pointsize" : 32.0,
+			"scale" : "0.46832 0.46832 0.46832",
+			"size" : "589.00000 156.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '2983913047';\n// Please note: Do not remove this line or asset references may break.\n/**\n * @param {String} value (for property 'text')\n */\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showYear',\n\t\tlabel: '显示年份',\n\t\tvalue: true\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: '定界符',\n\t\tvalue: ':'\n\t})\n\t.addCheckbox({\n\t\tname: 'showDate',\n\t\tlabel: '不显示日期',\n\t\tvalue: false\n\t})\n\t.addCheckbox({\n\t\tname: 'showCD',\n\t\tlabel: '隐藏日期时间',\n\t\tvalue: false\n\t})\n\t.finish();\nexport function update(value) {\n\tlet now = new Date();\n\tvar year = now.getFullYear();\n\tlet month = (\"00\" + (now.getMonth()+1)).slice(-2);\n\tlet day = (\"00\" + now.getDate()).slice(-2);\n\tvalue = year + scriptProperties.delimiter + month + scriptProperties.delimiter + day;\n\tif (!scriptProperties.showYear) {\n\t\tvalue = month + scriptProperties.delimiter +day;\n\t}\n\tif (scriptProperties.showDate) {\n\t\tvalue = '\\0';\n\t}\n\tif (scriptProperties.showCD) {\n\t\tvalue = '\\0';\n\t}\n\treturn value;\n}\n",
+				"scriptproperties" : 
+				{
+					"delimiter" : ".",
+					"showCD" : false,
+					"showDate" : false,
+					"showYear" : true
+				},
+				"value" : "2023.06.02"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "enabledateandtime",
+				"value" : true
+			}
+		},
+		{
+			"disablepropagation" : false,
+			"id" : 59,
+			"instanceoverride" : 
+			{
+				"id" : 60,
+				"lifetime" : 2.0
+			},
+			"locktransforms" : true,
+			"name" : "Sakura",
+			"origin" : "2468.97119 1097.41284 0.00000",
+			"particle" : "particles/presets/leaves5.json",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : "enablesakura",
+				"value" : true
+			}
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.00000",
+			"disablepropagation" : false,
+			"id" : 95,
+			"instanceoverride" : 
+			{
+				"alpha" : 1.0,
+				"colorn" : 
+				{
+					"user" : "schemecolor",
+					"value" : "0.95294 0.69412 0.72157"
+				},
+				"id" : 98,
+				"size" : 1.0
+			},
+			"locktransforms" : true,
+			"name" : "MrDogTastic's Mouse Trail",
+			"origin" : "955.25220 1005.12299 0.00000",
+			"particle" : "particles/workshop/2098048943/presets/trail_1.json",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : "enablemousetrail",
+				"value" : false
+			}
+		},
+		{
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 94,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : "0.7529411764705882 0.7529411764705882 0.7529411764705882"
+							},
+							"id" : 96
+						}
+					],
+					"visible" : 
+					{
+						"user" : "grayscalemode",
+						"value" : false
+					}
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 102,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "customcolorfilter",
+									"value" : "1 0 0"
+								}
+							},
+							"id" : 103
+						}
+					],
+					"visible" : 
+					{
+						"user" : "enablecustomcolorfilter",
+						"value" : false
+					}
+				}
+			],
+			"id" : 91,
+			"image" : "models/util/projectlayer.json",
+			"name" : "Full Composition Layer",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"size" : "3840.00000 2160.00000"
+		}
+	],
+	"version" : 5
+}
