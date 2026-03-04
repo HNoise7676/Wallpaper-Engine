@@ -1,0 +1,19 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/3667892579/effects/hex_grid.json",
+		"shaders/workshop/3667892579/effects/hex_grid.frag",
+		"shaders/workshop/3667892579/effects/hex_grid.vert"
+	],
+	"editable" : false,
+	"group" : "localeffects",
+	"name" : "Hex Grid",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/3667892579/effects/hex_grid.json"
+		}
+	],
+	"replacementkey" : "hex_grid",
+	"version" : 1
+}

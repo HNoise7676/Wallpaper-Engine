@@ -1,0 +1,19 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/3424687146/effects/3d_audio_visualizer.json",
+		"shaders/workshop/3424687146/effects/3d_audio_visualizer.frag",
+		"shaders/workshop/3424687146/effects/3d_audio_visualizer.vert"
+	],
+	"editable" : false,
+	"group" : "localeffects",
+	"name" : "3D Audio Visualizer",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/3424687146/effects/3d_audio_visualizer.json"
+		}
+	],
+	"replacementkey" : "3d_audio_visualizer",
+	"version" : 1
+}
