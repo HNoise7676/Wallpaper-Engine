@@ -8,7 +8,7 @@ wallpaper engine themes for both PC and mobile
 
 ###### to do list
 
-- [ ] make more wallpapers
+- [x] make more wallpapers
 
 - [ ] optimize mobile wallpapers for best quality and performace
 
